@@ -1,0 +1,7 @@
+
+%macro DELETE_DS(LIBN,SETN);
+proc datasets LIB= &LIBN. NOLIST NODETAILS;
+delete  &SETN.;
+RUN;
+%mend;
+
